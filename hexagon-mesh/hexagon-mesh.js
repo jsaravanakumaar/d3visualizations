@@ -124,19 +124,19 @@ tgs.widgets.Hexagon = (function (d3) {
         }
 
         const graph = function () {
-			return {
-				render: function(data) {
-					_render(data);
-					return graph;
-				},
-				update: function(data) {
-					_update(data);
-					return graph;
-				}
-			};
-		}
+            return {
+                render: function(data) {
+                    _render(data);
+                    return graph;
+                },
+                update: function(data) {
+                    _update(data);
+                    return graph;
+                }
+            };
+        }
 
-		return {graph: graph};
+        return {graph: graph};
     }
     return {"Generator": Generator};
 })(d3);
