@@ -27,6 +27,7 @@
     </head>
     <body>
         <div id="hexagon" class="center"></div>
+        <button id="update-button" onclick="update()">Update</button>
     </body>
     <script src="./hexagon-mesh.js"></script>
     <script type="text/javascript">
@@ -43,5 +44,20 @@
             "15": {"fill": "#99d8c9", "text": ""},
             "14": {"fill": "#2b8cbe", "text": ""}
         });
+
+        const update = function() {
+            hexagon.update({
+                "3": {"fill": "#f6bdfb", "text": "SARAV"},
+                "5": {"fill": "#a6bddb", "text": ""},
+                "11": {"fill": "#a6bddb", "text": "POONCH"},
+                "6": {"fill": "#f0f0f0", "text": "KUPWARA"},
+                "13": {"fill": "#f0f0f0", "text": "BARAMULLA"},
+                "18": {"fill": "#f0f0f0", "text": "RAJOURI"},
+                "9": {"fill": "#99d8c9", "text": ""},
+                "10": {"fill": "#99d8c9", "text": "BADGAM"},
+                "15": {"fill": "#99d8c9", "text": ""},
+                "14": {"fill": "#2b8cbe", "text": ""}
+            });
+        }
     </script>
 </html>
