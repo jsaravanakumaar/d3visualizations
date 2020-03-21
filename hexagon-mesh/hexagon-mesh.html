@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hexagon layout</title>
+        <script src="../lib/d3.js"></script>
+        <style>
+            .center {
+                margin: auto;
+                width: 50%;
+            }
+
+            .hexagon {
+                pointer-events: all;
+                stroke: white;
+            }
+
+            .hexagon path {
+                -webkit-transition: fill 250ms linear;
+                transition: fill 250ms linear;
+            }
+
+            text {
+                font: bold 12px Verdana, Helvetica, Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="hexagon" class="center"></div>
+    </body>
+    <script src="./hexagon-mesh.js"></script>
+    <script type="text/javascript">
+        const hexagon = tgs.widgets.Hexagon.Generator({"container": {"id": "#hexagon", "width": 600, "height": 400}, "radius": 50}).graph();
+        hexagon.render({
+            "3": {"fill": "#a6bddb", "text": "KOTLI"},
+            "5": {"fill": "#a6bddb", "text": ""},
+            "11": {"fill": "#a6bddb", "text": "POONCH"},
+            "6": {"fill": "#f0f0f0", "text": "KUPWARA"},
+            "13": {"fill": "#f0f0f0", "text": "BARAMULLA"},
+            "18": {"fill": "#f0f0f0", "text": "RAJOURI"},
+            "9": {"fill": "#99d8c9", "text": ""},
+            "10": {"fill": "#99d8c9", "text": "BADGAM"},
+            "15": {"fill": "#99d8c9", "text": ""},
+            "14": {"fill": "#2b8cbe", "text": ""}
+        });
+    </script>
+</html>
