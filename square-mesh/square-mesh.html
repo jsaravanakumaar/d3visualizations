@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Square layout</title>
+        <script src="../lib/d3.js"></script>
+        <style>
+            .center {
+                margin: auto;
+                width: 50%;
+            }
+
+            .square {
+                pointer-events: all;
+                stroke: white;
+            }
+
+            .square path {
+                -webkit-transition: fill 250ms linear;
+                transition: fill 250ms linear;
+            }
+
+            text {
+                font: bold 12px Verdana, Helvetica, Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="square" class="center"></div>
+        <button id="update-button" onclick="update()">Update</button>
+    </body>
+    <script src="./square-mesh.js"></script>
+    <script type="text/javascript">
+        const square = tgs.widgets.Square.Generator({"container": {"id": "#square", "width": 500, "height": 500}, "side": 50}).graph();
+        square.render({
+            "4": {"fill": "url(#Gradient1)", "text": "KOTLI"},
+            "5": {"fill": "url(#Gradient0", "text": "KOTLI"},
+            "6": {"fill": "url(#Gradient0)", "text": ""},
+            "14": {"fill": "url(#Gradient1)", "text": "POONCH"},
+            "15": {"fill": "url(#Gradient1)", "text": "KUPWARA"},
+            "16": {"fill": "url(#Gradient1)", "text": "BARAMULLA"},
+            "17": {"fill": "url(#Gradient1)", "text": "RAJOURI"},
+            "18": {"fill": "url(#Gradient1)", "text": ""},
+            "19": {"fill": "url(#Gradient1)", "text": "BADGAM"},
+            "23": {"fill": "url(#Gradient1)", "text": "BADGAM"},
+            "24": {"fill": "url(#Gradient2)", "text": ""},
+            "25": {"fill": "url(#Gradient2)", "text": ""},
+            "26": {"fill": "url(#Gradient2)", "text": ""},
+            "27": {"fill": "url(#Gradient2)", "text": ""},
+            "28": {"fill": "url(#Gradient2)", "text": ""},
+            "29": {"fill": "url(#Gradient2)", "text": ""},
+            "30": {"fill": "url(#Gradient2)", "text": ""},
+            "31": {"fill": "url(#Gradient2)", "text": ""},
+            "32": {"fill": "url(#Gradient2)", "text": ""},
+            "33": {"fill": "url(#Gradient2)", "text": ""},
+            "34": {"fill": "url(#Gradient3)", "text": ""},
+            "35": {"fill": "url(#Gradient3)", "text": ""},
+            "36": {"fill": "url(#Gradient3)", "text": ""},
+            "43": {"fill": "url(#Gradient3)", "text": ""},
+            "44": {"fill": "url(#Gradient3)", "text": ""},
+            "45": {"fill": "url(#Gradient3)", "text": ""},
+            "46": {"fill": "url(#Gradient3)", "text": ""},
+            "53": {"fill": "url(#Gradient1)", "text": ""},
+            "54": {"fill": "#f8f8f8", "text": ""},
+            "55": {"fill": "#f8f8f8", "text": ""},
+            "63": {"fill": "url(#Gradient1)", "text": ""},
+            "64": {"fill": "#f8f8f8", "text": ""},
+            "65": {"fill": "#f8f8f8", "text": ""},
+            "73": {"fill": "url(#Gradient1)", "text": ""},
+            "84": {"fill": "url(#Gradient1)", "text": ""},
+            "85": {"fill": "url(#Gradient1)", "text": ""},
+            "86": {"fill": "url(#Gradient1)", "text": ""},
+            "93": {"fill": "url(#Gradient1)", "text": ""},
+            "94": {"fill": "url(#Gradient1)", "text": ""},
+            "95": {"fill": "url(#Gradient0)", "text": ""},
+            "96": {"fill": "url(#Gradient0)", "text": ""}
+        });
+
+        const update = function() {
+            square.update({
+            "4": {"fill": "url(#GreenGradient1)", "text": "KOTLI"},
+            "5": {"fill": "url(#GreenGradient0", "text": "KOTLI"},
+            "6": {"fill": "url(#GreenGradient0)", "text": ""},
+            "14": {"fill": "url(#GreenGradient1)", "text": "POONCH"},
+            "15": {"fill": "url(#GreenGradient1)", "text": "KUPWARA"},
+            "16": {"fill": "url(#GreenGradient1)", "text": "BARAMULLA"},
+            "17": {"fill": "url(#GreenGradient1)", "text": "RAJOURI"},
+            "18": {"fill": "url(#GreenGradient1)", "text": ""},
+            "19": {"fill": "url(#GreenGradient1)", "text": "BADGAM"},
+            "23": {"fill": "url(#GreenGradient1)", "text": "BADGAM"},
+            "24": {"fill": "url(#GreenGradient2)", "text": ""},
+            "25": {"fill": "url(#GreenGradient2)", "text": ""},
+            "26": {"fill": "url(#GreenGradient2)", "text": ""},
+            "27": {"fill": "url(#GreenGradient2)", "text": ""},
+            "28": {"fill": "url(#GreenGradient2)", "text": ""},
+            "29": {"fill": "url(#GreenGradient2)", "text": ""},
+            "30": {"fill": "url(#GreenGradient2)", "text": ""},
+            "31": {"fill": "url(#GreenGradient2)", "text": ""},
+            "32": {"fill": "url(#GreenGradient2)", "text": ""},
+            "33": {"fill": "url(#GreenGradient2)", "text": ""},
+            "34": {"fill": "url(#GreenGradient3)", "text": ""},
+            "35": {"fill": "url(#GreenGradient3)", "text": ""},
+            "36": {"fill": "url(#GreenGradient3)", "text": ""},
+            "43": {"fill": "url(#GreenGradient3)", "text": ""},
+            "44": {"fill": "url(#GreenGradient3)", "text": ""},
+            "45": {"fill": "url(#GreenGradient3)", "text": ""},
+            "46": {"fill": "url(#GreenGradient3)", "text": ""},
+            "53": {"fill": "url(#GreenGradient1)", "text": ""},
+            "54": {"fill": "#f8f8f8", "text": ""},
+            "55": {"fill": "#f8f8f8", "text": ""},
+            "63": {"fill": "url(#GreenGradient1)", "text": ""},
+            "64": {"fill": "#f8f8f8", "text": ""},
+            "65": {"fill": "#f8f8f8", "text": ""},
+            "73": {"fill": "url(#GreenGradient1)", "text": ""},
+            "84": {"fill": "url(#GreenGradient1)", "text": ""},
+            "85": {"fill": "url(#GreenGradient1)", "text": ""},
+            "86": {"fill": "url(#GreenGradient1)", "text": ""},
+            "93": {"fill": "url(#GreenGradient1)", "text": ""},
+            "94": {"fill": "url(#GreenGradient1)", "text": ""},
+            "95": {"fill": "url(#GreenGradient0)", "text": ""},
+            "96": {"fill": "url(#GreenGradient0)", "text": ""}
+            });
+        }
+    </script>
+</html>
