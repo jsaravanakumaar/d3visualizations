@@ -1,7 +1,7 @@
-if (!window.tgs) { tgs = {}; }
-if (!window.tgs.widgets) { tgs.widgets = {}; }
+if (!window.kgs) { kgs = {}; }
+if (!window.kgs.widgets) { kgs.widgets = {}; }
 
-tgs.widgets.Square = (function (d3) {
+kgs.widgets.Square = (function (d3) {
     "use strict";
 
     const Generator = function (config) {
@@ -237,7 +237,7 @@ tgs.widgets.Square = (function (d3) {
         }
 
         const _update = function(data) {
-            //It is assumed that the Hexagon Mesh is not changed however the Hexagon's title and color changed.
+            //It is assumed that the Square Mesh is not changed however the Square's title and color changed.
             d3.selectAll(".square").transition().duration(1000).attr("fill", (d, i) => {
                 let fillValue = data[i];
                 if (fillValue)

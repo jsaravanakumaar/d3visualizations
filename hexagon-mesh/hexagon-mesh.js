@@ -1,7 +1,7 @@
-if (!window.tgs) { tgs = {}; }
-if (!window.tgs.widgets) { tgs.widgets = {}; }
+if (!window.kgs) { kgs = {}; }
+if (!window.kgs.widgets) { kgs.widgets = {}; }
 
-tgs.widgets.Hexagon = (function (d3) {
+kgs.widgets.Hexagon = (function (d3) {
     "use strict";
 
     const Generator = function (config) {

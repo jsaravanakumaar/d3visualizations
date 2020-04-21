@@ -1,0 +1,17 @@
+[
+    {"id":"App1","name":"Warnings","type":"Warnings","count":50},
+    {"id":"App1","name":"Errors","type":"ERR0000001","count":30},
+    {"id":"App1","name":"Errors","type":"ERR0000002","count":10},
+    {"id":"App2","name":"Warnings","type":"WARN1000002","count":12},
+    {"id":"App2","name":"Warnings","type":"WARN1000003","count":10},
+    {"id":"App2","name":"Warnings","type":"WARN0000004","count":3},
+    {"id":"App2","name":"Errors","type":"ERR1000001","count":50},
+    {"id":"App2","name":"Errors","type":"ERR1000002","count":50},
+    {"id":"App8","name":"Warnings","type":"WARN3000002","count":15},
+    {"id":"App8","name":"Warnings","type":"WARN3000003","count":10},
+    {"id":"App8","name":"Warnings","type":"WARN3000004","count":20},
+    {"id":"App8","name":"Errors","type":"ERR3000001","count":2},
+    {"id":"App8","name":"Errors","type":"ERR3000002","count":5},
+    {"id":"App8","name":"Information","type":"INF3000001","count":40},
+    {"id":"App8","name":"Information","type":"INF3000002","count":20}
+  ]

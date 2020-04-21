@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Square layout</title>
-        <script src="../lib/d3.js"></script>
+        <script src="../../lib/d3.js"></script>
         <style>
             .center {
                 margin: auto;
@@ -29,9 +29,9 @@
         <div id="square" class="center"></div>
         <button id="update-button" onclick="update()">Update</button>
     </body>
-    <script src="./square-mesh.js"></script>
+    <script src="../../square-mesh//square-mesh.js"></script>
     <script type="text/javascript">
-        const square = tgs.widgets.Square.Generator({"container": {"id": "#square", "width": 500, "height": 500}, "side": 50}).graph();
+        const square = kgs.widgets.Square.Generator({"container": {"id": "#square", "width": 500, "height": 500}, "side": 50}).graph();
         square.render({
             "4": {"fill": "url(#Gradient1)", "text": "KOTLI"},
             "5": {"fill": "url(#Gradient0", "text": "KOTLI"},

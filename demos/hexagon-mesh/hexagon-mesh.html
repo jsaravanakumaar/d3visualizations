@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Hexagon layout</title>
-        <script src="../lib/d3.js"></script>
+        <script src="../../lib/d3.js"></script>
         <style>
             .center {
                 margin: auto;
@@ -29,9 +29,9 @@
         <div id="hexagon" class="center"></div>
         <button id="update-button" onclick="update()">Update</button>
     </body>
-    <script src="./hexagon-mesh.js"></script>
+    <script src="../../hexagon-mesh/hexagon-mesh.js"></script>
     <script type="text/javascript">
-        const hexagon = tgs.widgets.Hexagon.Generator({"container": {"id": "#hexagon", "width": 600, "height": 400}, "radius": 50}).graph();
+        const hexagon = kgs.widgets.Hexagon.Generator({"container": {"id": "#hexagon", "width": 600, "height": 400}, "radius": 50}).graph();
         hexagon.render({
             "3": {"fill": "#a6bddb", "text": "KOTLI"},
             "5": {"fill": "#a6bddb", "text": ""},
