@@ -87,11 +87,11 @@ kgs.widgets.Hexagon = (function (d3) {
 
             hexagonGroup.append("text")
                 .attr("class", "label")
-                .attr("x", (d, i) => d[0][0]) // + (d[3][0] - d[0][0]) / 2)
+                .attr("x", (d, i) => d[0][0] + 50) // + (d[3][0] - d[0][0]) / 2)
                 .attr("y", (d, i) => d[1][1] + 5 + (d[4][1] - d[1][1]) / 2)
                 .style("fill", "#000000")
-                .style("text-anchor", "start")
-                .attr("textLength", hexDia)
+                .style("text-anchor", "middle")
+                //.attr("textLength", hexDia)
                 .attr("lengthAdjust", "spacingAndGlyphs")
                 .text((d, i) => {
                     let textValue = data[i];

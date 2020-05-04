@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Greenhouse gas production</title>
+        <link rel="stylesheet" type="text/css" href="../../sankey-diagram/sankey-diagram.css" />
+        <style type="text/css">
+            .main-container {
+                width: 1200px;
+                height: 700px;
+                position: relative;
+                border: 3px solid green;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 700px;
+            }
+
+            .btn-center {
+                margin: 0;
+                position: absolute;
+                top: 97%;
+                left: 50%;
+            }
+        </style>
+        <script type="text/javascript" src="../../lib/d3.js"></script>
+        <script type="text/javascript" src="../../sankey-diagram/sankey-diagram.js"></script>
+    </head>
+    <body>
+        <div id="container" class="main-container">
+            <div id="chart" class="center"></div>
+            <button id="button" class="btn-center" onclick="updateChart()">Update</button>
+        </div>
+    </body>
+    <script type="text/javascript" src="./demo.js"></script>
+</html>
