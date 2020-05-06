@@ -8,3 +8,6 @@ Sankey Diagram added (Reused from d3noob's block) with enhancements like reusabl
 
 Combination of Stacked column chart and Donut chart.
 ![Stacked Column Donut](https://github.com/jsaravanakumaar/d3visualizations/blob/master/demos/stacked-column-donut/stacked-column-donut.png)
+
+Line chart with hover effect.
+![Line Chart](https://github.com/jsaravanakumaar/d3visualizations/blob/master/demos/line-chart/line-chart.png)
