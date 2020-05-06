@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Average temprature Line Chart</title>
+
+		<script src="../../../lib/d3.js"></script>
+		<script type="text/javascript" src="../../line-chart/line-chart.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="../../line-chart/line-chart.css" />
+		<style type="text/css">
+            .main-container {
+                width: 770px;
+                height: 500px;
+                position: relative;
+                border: 3px solid green;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 500px;
+            }
+
+            .btn-center {
+                margin: 0;
+                position: absolute;
+                top: 94%;
+                left: 50%;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="container" class="main-container">
+            <div id="chart" class="center"></div>
+            <button id="button" class="btn-center" onclick="updateChart()">Update</button>
+        </div>
+    </body>
+    <script type="text/javascript" src="./demo.js"></script>
+</html>

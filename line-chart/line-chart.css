@@ -1,0 +1,48 @@
+.line-chart {
+		
+}
+
+.line-chart .axis {
+	font: 1em sans-serief;
+}
+
+.line-chart .axis-label {
+	stroke: black;
+}
+
+.line-chart .line {
+	fill: none;
+	opacity: 0;
+	stroke-width: 1.5px;
+	cursor: default;
+}
+
+.line-chart .marker {
+	fill: #ffffff;
+	cursor: default;
+	stroke-width: 1.5px;
+	stroke: #ff0000;
+}
+
+.line-chart .label {
+	font: 12px sans-serief;
+}
+
+.line-chart .axis path, 
+.line-chart .axis line {
+	fill: none;
+	stroke: #000000;
+	shape-rendering: crispEdges;
+}
+
+.line-chart line.cutoff-limit.lcl {
+	stroke: #ff0000;
+	stroke-width: .5;
+    stroke-dasharray: 5,12;
+}
+
+.line-chart line.cutoff-limit.ucl {
+    stroke: #00ff00;
+    stroke-width: .5;
+    stroke-dasharray: 5,12;
+}
