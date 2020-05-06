@@ -171,6 +171,7 @@ kgs.widget.LineChart = (function (d3) {
 			.text(" ");
 
 		var line = d3.line()
+			.curve(d3.curveCardinal)
 			.x(function (d) { return xScale(d.parsedData); })
 			.y(function (d) { return yScale(d[bindingY]); });
 
