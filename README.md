@@ -3,6 +3,12 @@ Data visualization using D3JS
 
 Data visualizations using D3.JS library.  The charts are exposed as JavaScript API, so the novice JavaScript developers can use these visualizations in their applications.  Most of the charts will be designed to have render and update functions.  A JSON object must be passed as chart configuration.  And invoke the render method with initial set of data to render the chart.  In case update to chart is required use update method with updated set of data.
 
+Stacked Pie Chart added.  This chart is created by combining two semi circles.  And each of the semi circles use its own pie.
+![Stacked Pie Chart](https://github.com/jsaravanakumaar/d3visualizations/blob/master/demos/stepped-pie-chart/stepped-pie-chart.gif)
+
+Reusable Brush component added.
+![Brush component](https://github.com/jsaravanakumaar/d3visualizations/blob/master/demos/brush/brush.gif)
+
 Sankey Diagram added (Reused from d3noob's block) with enhancements like reusable chart with different data and hower effect.
 ![Sankey Diagram](https://github.com/jsaravanakumaar/d3visualizations/blob/master/demos/sankey-diagram/sankey-diagram.png)
 
