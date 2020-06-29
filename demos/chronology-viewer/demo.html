@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Average temprature Line Chart</title>
+
+		<script src="../../../lib/d3.js"></script>
+		<script type="text/javascript" src="../../tooltip/tooltip.js"></script>
+		<script type="text/javascript" src="../../chronology-viewer/chronology-viewer.js"></script>
+		
+		<!--link rel="stylesheet" type="text/css" href="../../line-chart/line-chart.css" /-->
+		<style type="text/css">
+            .main-container {
+                width: 770px;
+                height: 500px;
+                position: relative;
+                border: 3px solid green;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 500px;
+            }
+
+            .btn-center {
+                margin: 0;
+                position: absolute;
+                top: 94%;
+                left: 50%;
+            }
+
+            .tooltip {	
+                position: absolute;			
+                text-align: center;			
+                width: auto;			
+                height: auto;					
+                padding: 2px;				
+                font: 12px sans-serif;		
+                background: lightsteelblue;	
+                border: 0px;		
+                border-radius: 8px;			
+                pointer-events: none;			
+            }
+
+        </style>
+	</head>
+	<body>
+        <p>This is a recreation of a <a href="http://gapminder.org/world/">Gapminder visualization</a> made famous by <a href="https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen">Hans Rosling</a>. <br>It shows per-capita income (<em>x</em>), life expectancy (<em>y</em>) and population (<em>area</em>) of 180 nations over the last 209 years, </br>colored by region. Data prior to 1950 is sparse, so this chart uses <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">bisection</a> and <a href="https://en.wikipedia.org/wiki/Linear_interpolation">linear interpolation</a> to fill in missing data points.</p>
+        <div id="container" class="main-container1">
+            <div id="chart" class="center1">
+            </div>
+            <div class="tooltip"></span></div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./demo.js"></script>
+</html>
