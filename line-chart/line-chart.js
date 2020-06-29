@@ -522,9 +522,22 @@ kgs.widget.LineChart = (function (d3) {
 				.call(_drawMarkers)
 				.on("mouseover", function (d, i) {
 					d3.select(this).style("opacity", 1);
+					if (d3.event.pageY > 100)
+						d3.select(".tooltip")
+							.style("visibility", "visible")
+							.style("left", (d3.event.pageX) + "px")
+							.style("top", (d3.event.pageY + 20) + "px")
+							.html(d.temprature);
+					else
+						d3.select(".tooltip")
+							.style("visibility", "visible")
+							.style("left", (d3.event.pageX) + "px")
+							.style("top", (d3.event.pageY - 20) + "px")
+							.html(d.temprature);
 				})
 				.on("mouseout", function (d) {
 					d3.select(this).style("opacity", 0);
+					d3.select(".tooltip").style("visibility", "hidden");
 				});
 		}
 
