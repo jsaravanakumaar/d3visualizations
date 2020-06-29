@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Brush example</title>
+
+		<script src="../../../lib/d3.js"></script>
+		<script type="text/javascript" src="../../brush/brush.js"></script>
+		
+        <style type="text/css">
+
+            .axis--grid .domain {
+                fill:slategray;
+                stroke: none;
+            }
+
+            .axis--x .domain,
+            .axis--grid .tick line {
+                stroke: #dddddd;
+            }
+
+            .axis--grid .tick--minor line {
+                stroke-opacity: .5;
+            }
+
+            rect.selection {
+                fill:orangered;
+                opacity: 1;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="container" class="container">
+            <div id="chart"></div>
+        </div>
+        <button id="button" onclick="moveBrush()">MoveBrush</button>
+    </body>
+    <script type="text/javascript" src="./demo.js"></script>
+</html>
