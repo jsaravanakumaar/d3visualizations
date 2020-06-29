@@ -1,10 +1,11 @@
  if (!window.kgs) {
 	kgs = {};
 }
+
 if (!kgs.widget) {
 	kgs.widget = {};
 }
-
+'use strict';
 kgs.widget.StackedColumnDonut = (function (d3) {
 	function Generator(config) {
 		function enableMouseEvents(){
