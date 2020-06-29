@@ -3,7 +3,7 @@ let config = {
 		id : "#tooltip1",
 		title: "Tooltip for",
 		width: 200,
-		height: 100
+		height: 80
 	},
 	margin : {
 		top : 20,
