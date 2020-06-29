@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Average temprature Line Chart</title>
+
+        <script type="text/javascript" src="../../lib/d3.v3.js"></script>
+        <script type="text/javascript" src="../../lib/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="../../lib/jquery-ui-1.8.21.custom.js"></script>
+        <script type="text/javascript" src="../../lib/jsPubSub.js"></script>
+        <script type="text/javascript" src="../../common.js"></script>
+		<script type="text/javascript" src="../../link-explorer/link-explorer.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="../../common.css" />
+		<link rel="stylesheet" type="text/css" href="../../link-explorer/link-explorer.css" />
+		<style type="text/css">
+            .main-container {
+                width: 800px;
+                height: 497px;
+                position: relative;
+                border: 3px solid lightcoral;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 497px;
+            }
+
+            #chart {
+                border: 3px solid lightseagreen;
+            }
+        </style>
+	</head>
+	<body>
+        <div id="container" class="main-container">
+            <div id="chart" class="center" style="width: 800;height: 490;"></div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./demo.js"></script>
+</html>

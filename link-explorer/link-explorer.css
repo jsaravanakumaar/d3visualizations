@@ -1,0 +1,41 @@
+.link-explorer {
+}
+      
+.link-explorer .root {
+  fill: #ff7700;
+}
+
+.link-explorer .leaf {
+  fill: #0077ff;
+}
+
+.link-explorer .link {
+  stroke: #999999;
+}
+
+.link-explorer .hidden {
+  display: none;
+}
+
+.link-explorer .bold {
+  display: block;
+}
+
+.link-explorer g.node.circle.unrelated-node circle.round-border {
+  fill: #eaeaea;
+}
+
+.link-explorer .blur {
+  opacity: 0.1;
+}
+
+.link-explorer .grabbing-cursor {
+  cursor:grabbing;
+  cursor:-moz-grabbing;
+  cursor:-webkit-grabbing;
+}
+
+.link-explorer text.node {
+  font-size: .75em;
+  font-weight: normal;
+}
